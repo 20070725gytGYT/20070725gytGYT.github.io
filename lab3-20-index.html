@@ -7,141 +7,118 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>悦读生活</h1>
-        </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">图书分类</a></li>
-                <li><a href="#">热门推荐</a></li>
-                <li><a href="#">新书上市</a></li>
-                <li><a href="#">促销活动</a></li>
-                <li><a href="#">联系我们</a></li>
+    
+    <nav class="slanted-nav">
+        <div class="nav-container">
+            <h1 class="site-title">悦读生活</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item">首页</a></li>
+                <li><a href="#" class="nav-item">图书分类</a></li>
+                <li><a href="#" class="nav-item">热门推荐</a></li>
+                <li><a href="#" class="nav-item">新书专区</a></li>
+                <li><a href="#" class="nav-item">促销活动</a></li>
             </ul>
-        </nav>
-    </header>
-    <main class="main-content">
-        <aside class="left-sidebar">
-            <div class="category-nav">
-                <h3>图书分类导航</h3>
-                <ul>
-                    <li><a href="#">文学小说</a></li>
-                   <li><a href="#">教育学习</a></li>
-                   <li><a href="#">生活百科</a></li>
-                    <li><a href="#">儿童读物</a></li>
-                    <li><a href="#">考试教材</a></li>
-                </ul>
-            </div>
-        </aside>
-        <section class="center-content">
-            <div class="hot-recommend">
-                <h2>热门推荐</h2>
-                <div class="book-list">
-                    <div class="book-item">
-                        <img src="红楼梦.jpg" alt="图书1">
-                        <h4>红楼梦</h4>
+        </div>
+    </nav>
+
+    <main class="asymmetric-layout">
+        <div class="main-content">
+            <section class="staggered-books">
+                <h2 class="section-title">热门图书推荐</h2>
+                <div class="book-stack">
+                    <div class="book-card book-1">
+                        <img src="红楼梦.jpg" alt="红楼梦" class="book-cover-img">
+                        <h3>红楼梦</h3>
+                        <p class="author">作者：曹雪芹</p>
+                        <p class="price">¥56.00</p>
+                    </div>
+                    <div class="book-card book-2">
+                        <img src="西游记.jpg" alt="西游记" class="book-cover-img">
+                        <h3>西游记</h3>
+                        <p class="author">作者：吴承恩</p>
                         <p class="price">¥68.00</p>
                     </div>
-                    <div class="book-item">
-                        <img src="西游记.jpg" alt="图书2">
-                        <h4>西游记</h4>
-                        <p class="price">¥89.00</p>
+                    <div class="book-card book-3">
+                        <img src="三国演义.jpg" alt="三国演义" class="book-cover-img">
+                        <h3>三国演义</h3>
+                        <p class="author">作者：罗贯中</p>
+                        <p class="price">¥49.00</p>
                     </div>
-                    <div class="book-item">
-                        <img src="三国演义.jpg" alt="图书3">
-                        <h4>三国演义</h4>
-                        <p class="price">¥75.00</p>
+                    <div class="book-card book-4">
+                        <img src="水浒传.jpg" alt="水浒传" class="book-cover-img">
+                        <h3>水浒传</h3>
+                        <p class="author">作者：施耐庵</p>
+                        <p class="price">¥52.00</p>
                     </div>
-                    <div class="book-item">
-                        <img src="水浒传.jpg" alt="图书4">
-                        <h4>水浒传</h4>
-                        <p class="price">¥78.00</p>
+                    <div class="book-card book-5">
+                        <img src="五三.jpg" alt="五三" class="book-cover-img">
+                        <h3>五三</h3>
+                        <p class="author">作者：陈伟</p>
+                        <p class="price">¥215.00</p>
                     </div>
-                    <div class="book-item">
-                        <img src="五三.jpg" alt="图书5">
-                        <h4>五年高考三年模拟</h4>
-                        <p class="price">¥218.00</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="为什么.jpg" alt="图书6">
-                        <h4>十万个为什么</h4>
-                        <p class="price">¥68.00</p>
+                    <div class="book-card book-6">
+                        <img src="为什么.jpg" alt="为什么" class="book-cover-img">
+                        <h3>十万个为什么</h3>
+                        <p class="author">作者：刘洋</p>
+                        <p class="price">¥82.00</p>
                     </div>
                 </div>
+            </section>
+
+            <section class="diagonal-section">
+                <h2 class="section-title">新书上市</h2>
+                <div class="book-grid">
+                    <div class="new-book">
+                        <span class="book-tag">新</span>
+                        <h4>《时尚杂志》</h4>
+                        <p>2024年9月出版</p>
+                    </div>
+                    <div class="new-book">
+                        <span class="book-tag">热</span>
+                        <h4>《小狐狸》</h4>
+                        <p>2024年8月出版</p>
+                    </div>
+                    <div class="new-book">
+                        <span class="book-tag">荐</span>
+                        <h4>《考前必看》</h4>
+                        <p>2024年9月出版</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="side-panel" style="position: relative; top: 15px;">
+            <div class="circle-nav">
+                <h3>图书分类</h3>
+                <div class="category-circles">
+                    <a href="#" class="category-circle">文学小说</a>
+                    <a href="#" class="category-circle">儿童读物</a>
+                    <a href="#" class="category-circle">教育学习</a>
+                    <a href="#" class="category-circle">生活百科</a>
+                </div>
             </div>
-            <div class="new-books">
-                <h2>新书上市</h2>
-                <table class="book-table">
-                    <thead>
-                        <tr>
-                            <th>书名</th>
-                            <th>作者</th>
-                            <th>出版社</th>
-                            <th>价格</th>
-                            <th>出版日期</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>考前精准备考</td>
-                            <td>张明</td>
-                            <td>人民邮电出版社</td>
-                            <td>¥79.00</td>
-                            <td>2025-09-01</td>
-                        </tr>
-                        <tr>
-                            <td>时尚杂志</td>
-                            <td>李雯雯</td>
-                            <td>上海时尚出版社</td>
-                            <td>¥35.00</td>
-                            <td>2025-09-15</td>
-                        </tr>
-                        <tr>
-                            <td>散文诗集</td>
-                            <td>王吴</td>
-                            <td>文学出版社</td>
-                            <td>¥62.00</td>
-                            <td>2025-08-20</td>
-                        </tr>
-                        <tr>
-                            <td>小狐狸</td>
-                            <td>赵丽</td>
-                            <td>儿童文学出版社</td>
-                            <td>¥36.00</td>
-                            <td>2025-09-10</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <aside class="right-sidebar">
-            <div class="promotion-info">
-                <h3>促销信息</h3>
-                <div class="promo-item">
+
+            <div class="promo-cards">
+                <div class="promo-card promo-1">
                     <h4>开学季特惠</h4>
                     <p>全场图书8折起</p>
-                    <p class="promo-date">9月1日-9月30日</p>
+                    <span class="promo-badge">限时</span>
                 </div>
-                <div class="promo-item">
+                <div class="promo-card promo-2">
                     <h4>会员专享</h4>
-                    <p>新用户注册立减20元</p>
-                </div>
-                <div class="promo-item">
-                    <h4>满减活动</h4>
-                    <p>满100减15，满200减40</p>
-                </div>
-                <div class="promo-item">
-                    <h4>限时抢购</h4>
-                    <p>每日10点限量特价书</p>
+                    <p>新用户立减20元</p>
                 </div>
             </div>
         </aside>
     </main>
-    <footer class="footer">
-        
-        <p>&copy; 2025 悦读生活</p>
+
+    <footer class="stepped-footer">
+        <div class="footer-step step-1">
+            <p>悦读生活</p>
+        </div>
+        <div class="footer-step step-2">
+            <p>联系我们: contact@xxx.com</p>
+        </div>
     </footer>
 </body>
 </html>
